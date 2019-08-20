@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#gbtn").on("click", function () {
+                var randomstring = Math.random().toString(36).slice(-11);
+                $("#passgen").attr('value', randomstring);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="button" id='gbtn' value="Generate!">
+    <input type="text" placeholder="pass" id="passgen"></span>
+</body>
+
+</html>
