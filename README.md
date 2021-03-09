@@ -1,3 +1,3 @@
-# bootstrap-origami
+# bootstrap-origamid
 
 Origamid Bootstrap Tutorial
